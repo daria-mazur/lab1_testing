@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TestList>
-	<TestWithValidData a="1" b="2" expected="7"/>
+	<TestWithValidData a="1" b="2" expected="3"/>
 	<TestWithValidData a="-1" b="1" expected="0"/>
 	<TestWithValidData a="2147483647" b="-1" expected="2147483646"/>
 	<TestWithValidData a="-2147483648" b="1" expected="-2147483647"/>
