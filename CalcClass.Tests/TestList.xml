@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestList>
+	<TestWithValidData a="1" b="2" expected="7"/>
+	<TestWithValidData a="-1" b="1" expected="0"/>
+	<TestWithValidData a="2147483647" b="-1" expected="2147483646"/>
+	<TestWithValidData a="-2147483648" b="1" expected="-2147483647"/>
+	<TestWithValidData a="0" b="0" expected="0"/>
+	<TestWithValidData a="-100" b="-200" expected="-300"/>
+
+	<TestWithInvalidData a="2147483648" b="0"/>
+	<TestWithInvalidData a="-2147483649" b="0"/>
+	<TestWithInvalidData a="2147483647" b="1"/>
+	<TestWithInvalidData a="-2147483648" b="-1"/>
+	<TestWithInvalidData a="9223372036854775807" b="-9223372036854775808"/>
+</TestList>
